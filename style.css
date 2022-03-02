@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #fc5c7d;
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+    color:#fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#text{
+    padding: .2em;
+    font-size: 4rem;
+    position: relative;
+
+}
+
+#text::after{
+    content:"";
+    position: absolute;
+    right: -5px;
+    width: 1px;
+    height: 5rem;
+    color: #fff;
+    border-right: #fff solid 4px;
+
+    animation: blink .8s infinite;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
